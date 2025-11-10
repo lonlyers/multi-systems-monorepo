@@ -1,0 +1,1 @@
+{ "name": "multi-systems-monorepo", "private": true, "devDependencies": { "eslint": "^8.0.0", "prettier": "^2.0.0" }, "workspaces": [ "packages/*", "apps/*" ] }
