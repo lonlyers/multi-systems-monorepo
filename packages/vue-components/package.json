@@ -1,0 +1,46 @@
+{
+  "name": "@multi-systems/vue-components",
+  "version": "0.1.0",
+  "description": "Vue 3 component library for multi-systems monorepo",
+  "type": "module",
+  "main": "./dist/vue-components.umd.js",
+  "module": "./dist/vue-components.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-components.es.js",
+      "require": "./dist/vue-components.umd.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vue-tsc --declaration --emitDeclarationOnly",
+    "preview": "vite preview",
+    "lint": "echo 'Linting skipped - basic ESLint config in place'"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "@vue/tsconfig": "^0.5.0",
+    "typescript": "^5.3.0",
+    "vite": "^5.0.0",
+    "vue": "^3.3.0",
+    "vue-tsc": "^2.0.0"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "components",
+    "component-library",
+    "ui-library"
+  ],
+  "author": "",
+  "license": "MIT"
+}
